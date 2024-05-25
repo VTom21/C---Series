@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +10,9 @@ namespace Exponential_Series
     {
         static void Main(string[] args)
         {
-            List<double> values = new List<double>();
+            List<string> values = new List<string>();
             List<string> values_terminal = new List<string>();
+            List<double> final_values = new List<double>();
             int n = 0;
             int u = 3;
             int factorial_n = 1;
@@ -25,10 +26,23 @@ namespace Exponential_Series
                     factorial_n *= i;
 
                 }
-                double result = Math.Pow(u, n) / factorial_n;
-                string result_terminal = $"({u}^{n}) / ({n}!); ";
-                values.Add(result);
-                values_terminal.Add(result_terminal);
+                if (counter != series - 1)
+                {
+                    double result = Math.Pow(u, n) / factorial_n;
+                    string result_terminal = $"({u}^{n}) / ({n}!) + ";
+                    values.Add($"{result} + ");
+                    values_terminal.Add(result_terminal);
+                    final_values.Add(result);
+                }
+                else
+                {
+                    double result = Math.Pow(u, n) / factorial_n;
+                    string result_terminal = $"({u}^{n}) / ({n}!)";
+                    values.Add($"{result}");
+                    values_terminal.Add(result_terminal);
+                    final_values.Add(result);
+                }
+
                 n++;
                 counter++;
                 factorial_n = 1;
@@ -36,16 +50,17 @@ namespace Exponential_Series
             Console.Write("The Series Shown: ");
             foreach (var item in values_terminal)
             {
-                Console.Write($"{item} ");
+                Console.Write($"{item}");
             }
             Console.WriteLine();
             Console.Write("The values Shown: ");
             foreach (var item in values)
             {
-                Console.Write($"{item}; ");
+                Console.Write($"{item}");
             }
+            Console.WriteLine();
+            Console.WriteLine($"The sum of these values: e^{u} ==> {final_values.Sum()}");
             Console.ReadKey();
         }
     }
 }
-
