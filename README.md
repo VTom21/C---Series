@@ -9,3 +9,5 @@
 --> {Polylogarithm}
 
 --> {Gamma Function}
+
+--> {Digamma Function}
