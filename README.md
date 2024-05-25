@@ -7,3 +7,5 @@
 --> {Harmonic Numbers}
 
 --> {Polylogarithm}
+
+--> {Gamma Function}
