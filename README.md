@@ -11,3 +11,5 @@
 --> {Gamma Function}
 
 --> {Digamma Function}
+
+--> {Binomial Series}
