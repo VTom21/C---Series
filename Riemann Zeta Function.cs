@@ -13,8 +13,8 @@ namespace Exponential_Series
             List<string> values = new List<string>();
             List<string> values_terminal = new List<string>();
             List<double> final_values = new List<double>();
-            int n = 1;
-            int s = 2;
+            double n = 1;
+            double s = 2;
             int counter = 0;
             Console.Write("Write a value: ");
             int series = Int32.Parse(Console.ReadLine());
