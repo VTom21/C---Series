@@ -10,7 +10,7 @@ namespace Exponential_Series
     {
         static void Main(string[] args)
         {
-            int H = 1;
+            double H = 1;
             List<string> values = new List<string>();
             List<string> values_terminal = new List<string>();
             List<double> final_values = new List<double>();
