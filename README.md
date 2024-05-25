@@ -1,5 +1,5 @@
 # C# Series
 
---> Exponential Series
+--> {Exponential Series}
 
---> Riemann Zeta Function
+--> {Riemann Zeta Function}
