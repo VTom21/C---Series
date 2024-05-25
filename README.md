@@ -5,3 +5,5 @@
 --> {Riemann Zeta Function}
 
 --> {Harmonic Numbers}
+
+--> {Polylogarithm}
