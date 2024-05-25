@@ -13,8 +13,8 @@ namespace Exponential_Series
             List<string> values = new List<string>();
             List<string> values_terminal = new List<string>();
             List<double> final_values = new List<double>();
-            int n = 0;
-            int u = 3;
+            double n = 0;
+            double u = 3;
             int factorial_n = 1;
             int counter = 0;
             Console.Write("Write a value: ");
